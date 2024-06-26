@@ -5,7 +5,7 @@ Se requiere tener instalado Node.js
 
 Instalación: 
 - Clonar o descargar el proyecto desde este link: 
-LINK 
+https://github.com/dalmiroalvarez/n5-projectReact-dalmiroalvarez
 
 - En una terminal en la carpeta del proyecto escribir por console "npm install" para instalar las dependencias.
 
