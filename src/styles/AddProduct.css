@@ -1,0 +1,109 @@
+.add-product-container {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  width: 90%;
+  margin: 1em;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  max-height: auto;
+}
+@media (max-width: 600px) {
+  .add-product-container {
+    width: 90%;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+}
+.add-product-container h2 {
+  margin: 0 0 15px;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.add-product-container form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-product-container form label {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+.add-product-container form input, .add-product-container form select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+@media (max-width: 600px) {
+  .add-product-container form {
+    width: 90%;
+    font-size: 0.95em;
+    flex-wrap: nowrap;
+  }
+  .add-product-container form label {
+    flex: 0 1 100%;
+  }
+  .add-product-container form input, .add-product-container form select {
+    width: 100%;
+  }
+}
+.add-product-container .button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.add-product-container .button-container button {
+  width: 45%;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.add-product-container .button-container .submit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+.add-product-container .button-container .submit-button:hover {
+  background-color: #38a169;
+}
+.add-product-container .button-container .clear-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+.add-product-container .button-container .clear-button:hover {
+  background-color: #e53e3e;
+}
+@media (max-width: 600px) {
+  .add-product-container .button-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .add-product-container .button-container button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+.dark-mode .add-product-container {
+  background-color: white;
+  color: black;
+}
+
+/*# sourceMappingURL=AddProduct.css.map */

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.product-list {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.product-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.product-item p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+.product-item input {
+  width: 60px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-align: end;
+}
+.product-item button {
+  margin-top: 5px;
+  padding: 12px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1em;
+}
+.product-item button:hover {
+  background-color: #38a169;
+}
+.product-item button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+@media (min-width: 600px) {
+  .product-item {
+    width: calc(50% - 40px);
+  }
+}
+@media (min-width: 900px) {
+  .product-item {
+    width: calc(33.333% - 40px);
+  }
+}
+
+/*# sourceMappingURL=ProductList.css.map */
